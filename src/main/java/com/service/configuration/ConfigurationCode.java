@@ -7,7 +7,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Configuration
 
-public class Confoguration {
+public class ConfigurationCode {
    @Bean
    @LoadBalanced
 	public RestTemplate restconfig() {

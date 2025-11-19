@@ -18,6 +18,16 @@ public class User {
 	private String address;
 	private String about;
   
+	public User(Integer id, String name, String address,String about) {
+		// TODO Auto-generated constructor stub
+		this.id=id;
+		this.name=name;
+		this.address=address;
+		this.about=about;
+	}
+	public User() {
+	    // required by JPA
+	}
 	public int getId() {
 		return id;
 	}
@@ -51,17 +61,17 @@ public class User {
 	}
 
 	@Transient
-	public java.util.List<Rateing> setrate = new ArrayList<>();
+	public java.util.List<Rateing> setrateing= new ArrayList<>();
 	   
 
 	public java.util.List<Rateing> getSetrate() {
-		return setrate;
+		return setrateing;
 	}
 
 	public void setSetrate(java.util.List<Rateing> setrate) {
-		this.setrate = setrate;
+		this.setrateing = setrate;
 	}
-
+                                                                                            
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", address=" + address + ", about=" + about + "]";
